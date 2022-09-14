@@ -1,0 +1,20 @@
+#include <iostream>
+int main(){
+	std::cout << "enter two integer" << std::endl;
+	int v1 = 0 , v2 = 0;
+	std::cin >> v1 >> v2;
+	if (v1 == v2 || v1+1 == v2 || v2+1 == v1){
+	    std::cout << "There is no integer in between these two integers"<<std::endl;
+	}
+	if (v1 > v2){
+		for(int val = v2 +1; val < v1; ++val){
+			std::cout << val;
+			}
+        }
+    else{
+        for(int val = v1 +1; val < v2; ++val){
+			std::cout << val;
+			}
+    }
+    return 0;
+}
